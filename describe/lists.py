@@ -62,3 +62,7 @@ def min_max(ser: pd.Series, splitor='~')->str:
     ma = ser.max()
     assert ma > mi
     return splitor.join(mi, ma)
+
+
+def join(alist, splitor=' '):
+    return splitor.join(alist)
